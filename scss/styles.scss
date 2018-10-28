@@ -1,0 +1,31 @@
+/* ------------ External Imports ------------ */
+@import "normalize";
+
+/*------- Variables -------*/
+@import "variables";
+
+/* ------- Colors ------- */
+@import "colors";
+
+/* ------- Fonts ------- */
+@import "fonts";
+
+/* ------- General Styles -------*/
+body{
+    font-size: $base-text-size;
+    font-family: "Open Sans", sans-serif;
+}
+
+.hide{
+    font-size: 0;
+    height: 0;
+    width: 0;
+    margin: 0;
+    padding: 0;
+}
+
+.uppercase{
+    text-transform: uppercase;
+}
+
+@import "menu";
