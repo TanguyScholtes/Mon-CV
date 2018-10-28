@@ -500,6 +500,7 @@ table {
 
 /*------- Variables -------*/
 /* ------- Colors ------- */
+/*--- Menu ---*/
 /* ------- Fonts ------- */
 @font-face {
   font-family: "Dragonforce";
@@ -632,11 +633,12 @@ body {
   display: block;
   height: 55px;
   line-height: 55px;
-  text-transform: uppercase;
+  transition: color 500ms ease;
 }
 
 .menu-link:hover, .menu-link:focus {
-  color: white;
+  color: #1673ff;
+  transition: color 500ms ease;
 }
 
 @media only screen and (min-width: 930px) {

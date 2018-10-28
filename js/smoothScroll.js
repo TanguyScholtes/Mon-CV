@@ -2,7 +2,7 @@
     "use strict";
 
     /* --- Usage malfunction for non one-pagers --- */
-    var links = $( '.menu-link' );
+    var links = $( '.internal-link' );
 
     function scrollToLink ( e ) {
         e.preventDefault();

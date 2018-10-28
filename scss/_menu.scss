@@ -103,10 +103,11 @@
     display: block;
     height: 55px;
     line-height: 55px;
-    text-transform: uppercase;
+    transition: color 500ms ease;
 
     &:hover, &:focus{
         color: $menu-link-hover;
+        transition: color 500ms ease;
     }
 }
 

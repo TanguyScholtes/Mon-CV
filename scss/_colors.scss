@@ -1,3 +1,6 @@
+$blue: rgb(0, 80, 200);
+
+/*--- Menu ---*/
 $branding-edge: black;
 $branding-link: white;
 $branding-link-hover: white;
@@ -5,4 +8,4 @@ $menu-background: rgb(50, 50, 50);
 $menu-text: white;
 $menu-border: black;
 $menu-link: white;
-$menu-link-hover: white;
+$menu-link-hover: lighten($blue, 15%);
