@@ -1,0 +1,22 @@
+.social, .legal{
+    text-align: center;
+    margin: 2em 0;
+}
+
+.legal{
+    font-size: 0.8em;
+}
+
+.pixel-heart{
+    height: 0.8em;
+    margin: 0 0.25em;
+}
+
+.social-link{
+    font-size: 3em;
+    margin-right: 2em;
+
+    &:last-child{
+        margin-right: 0;
+    }
+}
