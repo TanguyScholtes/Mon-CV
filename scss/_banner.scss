@@ -1,0 +1,61 @@
+#Banner{
+    position: relative;
+    padding: 3em 0;
+}
+
+.stars, .twinkling, .darken {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    display: block;
+    width: 100%;
+}
+
+.stars {
+    background: #000 url('../img/stars.png') repeat top center;
+    z-index: -2;
+}
+
+.twinkling{
+    background: transparent url('../img/twinkling.png') repeat top center;
+    z-index: -1;
+    -moz-animation: twinkle 200s linear infinite;
+    -ms-animation: twinkle 200s linear infinite;
+    -o-animation: twinkle 200s linear infinite;
+    -webkit-animation: twinkle 200s linear infinite;
+    animation: twinkle 200s linear infinite;
+}
+
+.banner-content{
+    color: $banner-text;
+    text-align: center;
+    background-image: url("../img/logo.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 256px;
+    padding: 0.66em 0;
+    box-sizing: border-box;
+}
+
+.banner-title{
+    font-family: 'Dragonforce', sans-serif;
+    font-size: 4em;
+    font-weight: 400;
+    margin-bottom: 0;
+    text-shadow: 3px 0 0 $banner-edge,
+                -3px 0 0 $banner-edge,
+                0 3px 0 $banner-edge,
+                0 -3px 0 $banner-edge,
+                2px 2px $banner-edge,
+                -2px -2px 0 $banner-edge,
+                2px -2px 0 $banner-edge,
+                -2px 2px 0 $banner-edge;
+}
+
+.banner-subtitle{
+    font-weight: bold;
+}
