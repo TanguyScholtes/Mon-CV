@@ -20,3 +20,19 @@
         margin-right: 0;
     }
 }
+
+.portfolio, .portfolio:focus, .portfolio:hover{
+    color: $website;
+}
+
+.facebook, .facebook:focus, .facebook:hover{
+    color: $facebook;
+}
+
+.linkedin, .linkedin:focus, .linkedin:hover{
+    color: $linkedin;
+}
+
+.github, .github:focus, .github:hover{
+    color: $github;
+}

@@ -598,6 +598,16 @@ h2, h3, h4, h5, h6 {
   text-transform: uppercase;
 }
 
+a {
+  color: #003c95;
+  transition: color 500ms ease;
+}
+
+a:hover, a:focus {
+  color: #1673ff;
+  transition: color 500ms ease;
+}
+
 .site-branding {
   position: relative;
 }
@@ -878,6 +888,7 @@ h2, h3, h4, h5, h6 {
   bottom: 0;
   right: 0;
   position: fixed;
+  padding: 1em 1em 0 1em;
 }
 
 .social, .legal {
@@ -901,4 +912,20 @@ h2, h3, h4, h5, h6 {
 
 .social-link:last-child {
   margin-right: 0;
+}
+
+.portfolio, .portfolio:focus, .portfolio:hover {
+  color: #323232;
+}
+
+.facebook, .facebook:focus, .facebook:hover {
+  color: #3B5998;
+}
+
+.linkedin, .linkedin:focus, .linkedin:hover {
+  color: #0077B5;
+}
+
+.github, .github:focus, .github:hover {
+  color: #24292E;
 }

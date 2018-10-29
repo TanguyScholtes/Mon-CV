@@ -1,13 +1,19 @@
 $blue: rgb(0, 80, 200);
+$website: rgb(50, 50, 50);
+$facebook: #3B5998;
+$linkedin: #0077B5;
+$github: #24292E;
 
 /*--- General ---*/
 $text-shadow: black;
+$link: darken($blue, 10%);
+$link-hover: lighten($link, 25%);
 
 /*--- Menu ---*/
 $branding-edge: black;
 $branding-link: white;
 $branding-link-hover: white;
-$menu-background: rgb(50, 50, 50);
+$menu-background: $website;
 $menu-text: white;
 $menu-border: black;
 $menu-link: white;
