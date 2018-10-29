@@ -2,4 +2,72 @@
     width: $width;
     max-width: $max-width;
     margin: 0 auto;
+    padding-top: 2em;
+    display: grid;
+    grid-gap: 3em;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+#mugshot{
+    grid-column: 1;
+}
+
+#about{
+    grid-column: 2/5;
+}
+
+#works{
+    grid-column: 1/3;
+}
+
+#studentship{
+    grid-column: 3/5;
+}
+
+#skills{
+    grid-column: 1/3;
+}
+
+#interests{
+    grid-column: 3/5;
+}
+
+.section-title{
+    margin: 0 0 1em 0;
+}
+
+.section-list{
+    list-style-type: none;
+    margin: 1em 0;
+    padding: 0;
+}
+
+.section-list-item{
+    margin: 1em 0;
+    line-height: 1.5em;
+}
+
+.section-list-item, #interests p{
+    font-size: 0.85em;
+}
+
+.inline-title{
+    display: inline-block;
+    margin: 0;
+
+    &::after{
+        content: " :";
+        display: inline-block;
+        margin: 0 0.25em;
+    }
+}
+
+.personnal-info{
+    margin: 0.25em 0;
+    line-height: 1.25em;
+}
+
+.mugshot{
+    border: 5px solid $image-border;
+    border-radius: 1em;
 }
