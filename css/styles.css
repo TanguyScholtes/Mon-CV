@@ -572,6 +572,81 @@ table {
   }
 }
 
+@-webkit-keyframes vacuum {
+  0% {
+    -webkit-transform: scale(1) rotateZ(0);
+    transform: scale(1) rotateZ(0);
+  }
+  80% {
+    -webkit-transform: scale(0.1) rotateZ(540deg);
+    transform: scale(0.1) rotateZ(540deg);
+  }
+  100% {
+    -webkit-transform: scale(1.1) rotateZ(720deg);
+    transform: scale(1.1) rotateZ(720deg);
+  }
+}
+
+@-moz-keyframes vacuum {
+  0% {
+    -moz-transform: scale(1) rotateZ(0);
+    transform: scale(1) rotateZ(0);
+  }
+  80% {
+    -moz-transform: scale(0.1) rotateZ(540deg);
+    transform: scale(0.1) rotateZ(540deg);
+  }
+  100% {
+    -moz-transform: scale(1.1) rotateZ(720deg);
+    transform: scale(1.1) rotateZ(720deg);
+  }
+}
+
+@-ms-keyframes vacuum {
+  0% {
+    -ms-transform: scale(1) rotateZ(0);
+    transform: scale(1) rotateZ(0);
+  }
+  80% {
+    -ms-transform: scale(0.1) rotateZ(540deg);
+    transform: scale(0.1) rotateZ(540deg);
+  }
+  100% {
+    -ms-transform: scale(1.1) rotateZ(720deg);
+    transform: scale(1.1) rotateZ(720deg);
+  }
+}
+
+@-o-keyframes vacuum {
+  0% {
+    -o-transform: scale(1) rotateZ(0);
+    transform: scale(1) rotateZ(0);
+  }
+  80% {
+    -o-transform: scale(0.1) rotateZ(540deg);
+    transform: scale(0.1) rotateZ(540deg);
+  }
+  100% {
+    -o-transform: scale(1.1) rotateZ(720deg);
+    transform: scale(1.1) rotateZ(720deg);
+  }
+}
+
+@keyframes vacuum {
+  0% {
+    transform: scale(1) rotateZ(0);
+    transform: scale(1) rotateZ(0);
+  }
+  80% {
+    transform: scale(0.1) rotateZ(540deg);
+    transform: scale(0.1) rotateZ(540deg);
+  }
+  100% {
+    transform: scale(1.1) rotateZ(720deg);
+    transform: scale(1.1) rotateZ(720deg);
+  }
+}
+
 /* ------- General Styles -------*/
 body {
   font-size: 18px;
@@ -880,7 +955,13 @@ a:hover, a:focus {
 
 .mugshot {
   border: 5px solid #787878;
-  border-radius: 1em;
+  border-radius: 50%;
+  transition: border-radius 500ms ease, border 500ms ease;
+}
+
+.mugshot:hover {
+  border-radius: 0 25%;
+  transition: border-radius 500ms ease, border 500ms ease;
 }
 
 #back-to-top {
@@ -908,10 +989,19 @@ a:hover, a:focus {
 .social-link {
   font-size: 3em;
   margin-right: 2em;
+  display: inline-block;
 }
 
 .social-link:last-child {
   margin-right: 0;
+}
+
+.social-link:hover, .social-link:focus {
+  -webkit-animation: vacuum 1s ease infinite both;
+  -moz-animation: vacuum 1s ease infinite both;
+  -o-animation: vacuum 1s ease infinite both;
+  -ms-animation: vacuum 1s ease infinite both;
+  animation: vacuum 1s ease infinite both;
 }
 
 .portfolio, .portfolio:focus, .portfolio:hover {

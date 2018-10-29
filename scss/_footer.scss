@@ -15,9 +15,18 @@
 .social-link{
     font-size: 3em;
     margin-right: 2em;
+    display: inline-block;
 
     &:last-child{
         margin-right: 0;
+    }
+
+    &:hover, &:focus{
+        -webkit-animation: vacuum 1s ease infinite both;
+        -moz-animation: vacuum 1s ease infinite both;
+        -o-animation: vacuum 1s ease infinite both;
+        -ms-animation: vacuum 1s ease infinite both;
+        animation: vacuum 1s ease infinite both;
     }
 }
 
