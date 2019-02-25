@@ -72,7 +72,7 @@
     border-radius: 50%;
     transition: border-radius 500ms ease, border 500ms ease;
     &:hover{
-        border-radius: 0 25%;
+        border-radius: 1em 0;
         transition: border-radius 500ms ease, border 500ms ease;
     }
 }
