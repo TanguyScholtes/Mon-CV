@@ -1,0 +1,36 @@
+.experience{
+    margin: 2rem 0;
+
+    &:first-of-type{
+        margin-top: 0;
+    }
+}
+
+.experience-header *{
+    display: inline-block;
+}
+
+.experience-dates, .experience-field{
+    margin-right: 2rem;
+}
+
+.experience-dates, .experience-location{
+    font-style: italic;
+}
+
+.experience-dates{
+    font-size: 0.8rem;
+}
+
+.experience-field{
+    font-weight: bold;
+    font-size: 1rem;
+    font-family: "Titillium Web", "Open Sans", sans-serif;
+}
+
+.experience-content{
+    margin-left: 4rem;
+    & p:first-child{
+        margin-top: 0;
+    }
+}

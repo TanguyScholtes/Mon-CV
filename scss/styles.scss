@@ -17,9 +17,6 @@
 html{
     color: $text;
     background-color: $background;
-}
-
-body{
     font-size: $base-text-size;
     font-family: "Titillium Web", "Open Sans", sans-serif;
 }
@@ -30,6 +27,10 @@ h1, .banner-title{
 
 h2, h3, h4, h5, h6{
     font-family: "Amaranth", sans-serif;
+}
+
+h2{
+    font-size: 1.5rem;
 }
 
 .hide{
@@ -54,11 +55,17 @@ a{
 }
 
 .icons{
-    margin-right: 1em;
+    margin-right: 0.5em;
+}
+
+.emphasis{
+    font-weight: bold;
+    font-size: 1.5em;
 }
 
 @import "menu";
 @import "banner";
 @import "main";
+@import "experience";
 @import "backToTop";
 @import "footer";
