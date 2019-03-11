@@ -632,13 +632,13 @@ table {
     transform: scale(1) rotateZ(0);
     transform: scale(1) rotateZ(0);
   }
-  80% {
+  50% {
     transform: scale(0.1) rotateZ(540deg);
     transform: scale(0.1) rotateZ(540deg);
   }
   100% {
-    transform: scale(1.1) rotateZ(720deg);
-    transform: scale(1.1) rotateZ(720deg);
+    transform: scale(1) rotateZ(720deg);
+    transform: scale(1) rotateZ(720deg);
   }
 }
 @keyframes pulse {
@@ -1057,11 +1057,11 @@ a:hover, a:focus {
   margin-right: 0;
 }
 .social-link:hover, .social-link:focus {
-  -webkit-animation: vacuum 1s ease infinite both;
-  -moz-animation: vacuum 1s ease infinite both;
-  -o-animation: vacuum 1s ease infinite both;
-  -ms-animation: vacuum 1s ease infinite both;
-  animation: vacuum 1s ease infinite both;
+  -webkit-animation: vacuum 2s ease infinite both;
+  -moz-animation: vacuum 2s ease infinite both;
+  -o-animation: vacuum 2s ease infinite both;
+  -ms-animation: vacuum 2s ease infinite both;
+  animation: vacuum 2s ease infinite both;
 }
 
 .portfolio, .portfolio:focus, .portfolio:hover {
