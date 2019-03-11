@@ -919,11 +919,7 @@ a:hover, a:focus {
   color: #828282;
 }
 
-#works {
-  grid-column: 1/5;
-}
-
-#studentship {
+#works, #studentship, #events {
   grid-column: 1/5;
 }
 
